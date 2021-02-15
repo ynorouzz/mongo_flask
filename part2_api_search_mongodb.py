@@ -1,20 +1,8 @@
-# https://flask-pymongo.readthedocs.io/en/latest/
+# Search addresses in MongoDB
 
-# from flask import Flask
-# from flask_pymongo import PyMongo
-#
-# app = Flask(__name__)
-# app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
-# mongo = PyMongo(app)
-#
-
-
-
-# https://stackoverflow.com/questions/48236087/implementing-mongodb-search-engine-api-in-flask
 from flask import jsonify
 from pymongo import TEXT
 from flask import Flask
-# from flask_restless import APIManager
 from flask_pymongo import PyMongo
 from pymongo import MongoClient
 
@@ -42,7 +30,7 @@ collection = db['es_25829']
 
 @app.route("/")
 def home_page():
-    return jsonify({'home page' })
+    return "home page"
 
 
 @app.route('/search', methods=['GET'])

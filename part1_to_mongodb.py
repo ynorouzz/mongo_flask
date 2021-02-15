@@ -1,14 +1,4 @@
-# https://kb.objectrocket.com/mongo-db/use-docker-and-python-for-a-mongodb-application-1046
-# 1- Download MongoDB docker
-# 2- Run docker: docker run -d -p 27017:27017 --name myname mongo
-# container ID (512b7297d225): docker ps
-# IP (172.17.0.2): docker inspect CONTAINER_ID
-# import the MongoClient class
-
-# create data directory
-# https://hub.docker.com/_/mongo
-# mounts the /my/own/datadir directory from the underlying host system as /data/db inside the container
-# docker run --name some-mongo -v /my/own/datadir:/data/db -d mongo
+# Read zipped csv files from URLs and insert them to MongoDB
 
 import requests
 import urllib.request
