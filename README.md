@@ -1,10 +1,19 @@
 # mongo_flask
 Data pipeline using MongoDB and Flask
 
-How to dockerize:
+Part 1: \
 
-1. In windows powershell by admin rights, install chocolatey https://chocolatey.org/install
-1. install pack https://buildpacks.io/docs/tools/pack/ (Add . $(pack completion)) to your .bashrc or .bash_profile)
-1. follow these steps: https://buildpacks.io/docs/app-developer-guide/build-an-app/ \
-  pack build part1_tomongodb.py --path src/ --builder cnbs/sample-builder:bionic
+1. Use the sources to create one or more collections in a MongoDB database
+1. Create your data pipeline / ETL in a way that enables regular or continuous updates
+1. Write your data pipeline / ETL (mainly) in Python
+
+Part 2:\
+1. Create an application with Python consisting of a high-performance RESTful API with at least one endpoint for address lookups, with string or JSON input and JSON output
+1. Run your application and share screenshots of:
+i.	at least one successful request
+ii. at least one unsuccessful request (also explain why this request was unsuccessful)
+1. Share your Dockerized application with us and make sure it's securely accessible
+
+
+
 
